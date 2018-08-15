@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="73c6cece-fb95-4f48-89ca-29195e262c75">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="8"/>
+	<queryString>
+		<![CDATA[SELECT
+     retailer.`Retailer_ID` ,
+     retailer.`Retailer_Name`,
+     retailer.`Retailer_Address`,
+     retailer.`Retailer_Contact_No`,
+     retailer.`Retailer_Email`
+FROM
+     `retailer` retailer]]>
+	</queryString>
+	<field name="Retailer_ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Retailer_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Retailer_Address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Retailer_Contact_No" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Retailer_Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="67af399f-fcc8-45ea-97ca-51b2ac59165d" x="179" y="23" width="193" height="38"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Supply Chain System]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3077a557-deac-4e12-82a1-f47cb77002da" x="196" y="15" width="163" height="35"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[List Of All Retailers]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField pattern="">
+				<reportElement uuid="0416502c-3a24-4614-868e-a9751a99c292" x="0" y="32" width="85" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Retailer_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="52f626b6-b8b0-436a-a9f3-9cd067d3c592" x="85" y="32" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Retailer_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="02dc8e73-5859-478c-8501-6416e1d72a66" x="185" y="32" width="128" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Retailer_Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="58dad410-2191-4b27-8f7a-3fb78c609873" x="313" y="32" width="123" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Retailer_Contact_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="deb0beef-a2be-40b1-b586-7261baf9a04a" x="436" y="32" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Retailer_Email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2a552980-5341-4474-9574-e6cf78e23f96" x="436" y="0" width="75" height="20"/>
+				<textElement/>
+				<text><![CDATA[Retailer Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="922f6f62-a53b-4b6e-bb29-6caa33f0a13d" x="313" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Retailer Contact No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9e02580c-8f28-4ae9-a488-0898e58f2b2b" x="185" y="0" width="83" height="20"/>
+				<textElement/>
+				<text><![CDATA[Retailer Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a393ada4-88b5-4e25-bc20-ee344db5215f" x="85" y="0" width="75" height="20"/>
+				<textElement/>
+				<text><![CDATA[Retailer Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81708561-8e51-4be2-a82f-a578632397fe" x="0" y="0" width="58" height="20"/>
+				<textElement/>
+				<text><![CDATA[Retailer ID]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="6cbb9eb3-f5a9-4d0c-b309-6258fd6b3615" x="4" y="16" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a8259cc3-4fea-437b-901d-2971e1c26320" x="428" y="16" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

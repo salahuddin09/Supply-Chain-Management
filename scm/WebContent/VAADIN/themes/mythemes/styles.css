@@ -1,0 +1,50 @@
+/* 
+    Document   : styles
+    Created on : Mar 12, 2013, 11:09:01 PM
+    Author     : Personal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+@import "../reindeer/styles.css";
+.v-verticallayout{
+    background-image: url(colorview01.gif);
+}
+.v-horizentallayout{
+    background-image: url(colorview01.gif);
+}
+.v-window{
+    background-image: url(colorview01.gif);
+}
+.v-gridlayout{
+    background-image: url(colorview01.gif);
+}
+.v-browser-background{
+    background-image: url(colorview01.gif);
+}
+
+.v-generated-body{
+    background-image: url(colorview01.gif);
+}
+
+.mystyle {
+font-family: family-name;
+font-size: 50px;
+font-weight: bold;
+line-height: 70px;
+
+}
+.mystyle1{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    
+
+}
+

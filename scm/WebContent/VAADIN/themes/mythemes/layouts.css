@@ -1,0 +1,23 @@
+/* 
+    Document   : layout
+    Created on : Mar 24, 2013, 11:06:43 AM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+@import "../reindeer/layouts.css";
+.v-verticallayout-white,
+.v-horizontallayout-white,
+.v-orderedlayout-white,
+.v-gridlayout-white,
+.v-csslayout-white,
+.v-formlayout-white,
+.v-splitpanel-vertical-white,
+.v-splitpanel-horizontal-white  {
+	color: yellow;
+}
